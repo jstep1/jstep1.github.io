@@ -8,14 +8,18 @@ p {
 }
 
 footer {
-    padding: 20px;
+    padding: 40px;
     clear: both;
     text-align: center;
     width: 100%;
 }
 
 .card {
-    padding: 20px;
-    margin: 20px 60px 60px 60px;
-	float:left;
+    margin: auto;
+}
+
+.img {
+    height: 250px;
+    width: 250px;
+    text-align: center;
 }
