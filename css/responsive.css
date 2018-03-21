@@ -59,12 +59,12 @@
  .banner-text p {
  font-size: 18px;
 }
-.banner-img {
-margin:auto;
-}
  .banner-btn a {
  margin-bottom: 100px;
 }
+.banner-img {
+    display: none;
+    }
 #overview {
 text-align:center;
 }
@@ -138,6 +138,7 @@ text-align:center;
  margin-bottom: 15px;
 }
 }
+
 @media screen and (max-width: 320px) {
  .banner-text {
  padding-top: 55%;
@@ -148,4 +149,6 @@ width:65%;
 .subscribe-form input[type=submit] {
  width: 35%;
 }
+
 }
+
