@@ -11,7 +11,6 @@
 <title>Jeremy Stepanovich</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/owl.carousel.css">
 <link rel="stylesheet" href="css/owl.transitions.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/responsive.css">
@@ -46,8 +45,8 @@
         <h1>Hello world!<br> My name is <span>Jeremy Stepanovich</span> and I am a full-stack web developer.</h1>
         <p>Developing applications for businesses of all sizes.</p>
         <div class="banner-btn">
-        <button type="button" class="btn btn-outline-primary land"><a href="https://github.com/jstep1" target="_blank"><img src="images/github-128.png"> Follow on GitHub</a></button>
-        <button type="button" class="btn btn-outline-primary land"><a href="https://www.linkedin.com/in/jeremystepanovich/" target="_blank"><img src="images/linkedin-128.png"> Connect on LinkedIn</a></button>
+        <a href="https://github.com/jstep1" target="_blank"><button type="button" class="btn btn-outline-primary land"><p id="bluetxt">Follow on GitHub<p></button></a>
+        <a href="https://www.linkedin.com/in/jeremystepanovich/" target="_blank"><button type="button" class="btn btn-outline-primary land"><p id="bluetxt">Connect on LinkedIn</p></button></a>
       </div>
       
       </div> 
@@ -55,17 +54,16 @@
     <div class="col-md-5 col-sm-12"><img class="banner-img img-responsive" src="images/stack4.png"> </div>
   </div>
 </section>
-<!-- header section --> 
+
 <!-- overview section -->
 <section id="overview" class="section overview">
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center">
         <h2 class="section-title"><span>About Me</span></h2>
-        <p class="section-intro">Full-stack web developer based out of Chicago. Proficient in HTML, CSS, Javascript and Node.js with knowledge of secondary tools such as Bootstrap and jQuery. Persistent, realiable and dedicated to each and every project. My passion lies in collaboration with clients to ensure their success.
+        <p class="section-intro">Full-stack web developer based out of Chicago. Proficient in HTML, CSS, Javascript, MySQL and MongoDB. Experience with Handlebars, Bootstrap, Materialize, jQuery, Node.JS and React. Persistent, realiable and dedicated to each and every project. My passion lies in collaboration with clients to ensure their success.
         <br><br>
         <br>
-        <!-- <br>"If you build it, they will come" - <i>Field of Dreams</i></p> -->
       </div>
     </div>
     <div class="row">
@@ -93,8 +91,6 @@
 </section>
 <!-- overview section --> 
 
-<!-- feature section 2 -->
-
 <!-- screen shots slider section-->
 <section id="screens" class="section screens" style="background-color: #f2f2f2">
   <div class="container" >
@@ -105,7 +101,6 @@
       </div>
     </div>
   
-  <!-- owl-carousel starts -->
 <div class="card-deck">
     <div class="card col-md-4">
         <img class="card-img-top" src="images/app-screen/jamhomepage.png" alt="Card image cap">
@@ -118,27 +113,26 @@
       </div>
 
       <div class="card col-md-4">
-        <img class="card-img-top" src="images/app-screen/wowstrivia.png" alt="Card image cap">
+        <img class="card-img-top" src="images/app-screen/stakerr.png" alt="Card image cap">
         <div class="card-body">
-        <h5 class="card-title">Trivia Game</h5>
-        <p class="card-text">Test your knowledge of the award-winning film, <i>The Wolf of Wall Street.</i></p>
-        <p class="card-text"><small class="text-muted">Created on February 6th, 2018</small></p>
-        <p class="section-intro" style="text-align: center;"><a href="https://jstep1.github.io/TriviaGame/index.html" target="_blank">View Project</a></p>
+        <h5 class="card-title">Stakerr</h5>
+        <p class="card-text">Create goals and place wagers on the likelihood of their completion.</p>
+        <p class="card-text"><small class="text-muted">Created on March 14th, 2018</small></p>
+        <p class="section-intro" style="text-align: center;"><a href="https://stakerr.herokuapp.com/" target="_blank">View Project</a></p>
         </div>
       </div>
 
       <div class="card col-md-4">
-      <img class="card-img-top" src="images/app-screen/giftastic.png" alt="Card image cap">
+      <img class="card-img-top" src="images/app-screen/allthenews.png" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">GifTastic</h5>
-        <p class="card-text">Check out our series of superhero gifs, or create your own!</p>
-        <p class="card-text"><small class="text-muted">Created on February 9th, 2018</small></p>
-        <p class="section-intro" style="text-align: center;"><a href="https://jstep1.github.io/GifTastic/index.html" target="_blank">View Project</a></p>
+        <h5 class="card-title">All The News</h5>
+        <p class="card-text">View the newest articles from Clickhole, save them for later and add personal notes.</p>
+        <p class="card-text"><small class="text-muted">Created on March 23rd, 2018</small></p>
+        <p class="section-intro" style="text-align: center;"><a href="https://all-the-news-scraper.herokuapp.com/" target="_blank">View Project</a></p>
         </div>
       </div>
 </div>
 </div>
-  <!-- owl-carousel starts --> 
 </section>
 
 <!--contact section -->
@@ -153,16 +147,52 @@
     </div>
     
     <!--contact form start-->
-    <div class="col-md-6 col-md-offset-3 conForm">
+    <div class="row">
+    <div class="col-md-8 col-md-offset-3 conForm">
       <div id="message"></div>
-      <form method="post" action="php/contact.php" name="cform" id="cform">
-        <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." >
-        <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." >
-        <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Project Details..."></textarea>
-        <input type="submit" id="submit" name="send" class="submitBnt" value="Send">
-        <div id="simple-msg"></div>
-      </form>
+      <form name="contactform" method="post" action="send_form_email.php">
+        <table width="450px">
+        <tr>
+         <td valign="top">
+          <label for="name">Name *</label>
+         </td>
+         <td valign="top">
+          <input type="text" name="name" maxlength="50" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="email">Email Address *</label>
+         </td>
+         <td valign="top">
+          <input type="text" name="email" maxlength="80" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="telephone">Telephone Number</label>
+         </td>
+         <td valign="top">
+          <input type="text" name="telephone" maxlength="30" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="comments">Comments *</label>
+         </td>
+         <td valign="top">
+          <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2" style="text-align:center">
+          <input type="submit" value="Submit" style="width: 30%; margin-left: 35%">
+         </td>
+        </tr>
+        </table>
+        </form>
     </div>
+  </div>
     <!--contact form end--> 
   </div>
 </section>
@@ -193,9 +223,7 @@
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/retina.min.js"></script> 
 <script src="js/modernizr.js"></script> 
-<script src="js/owl.carousel.min.js"></script> 
 <script src="js/jquery.subscribe.js"></script> 
 <script src="js/jquery.contact.js"></script> 
 <script src="js/main.js"></script>

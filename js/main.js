@@ -10,15 +10,6 @@ $(document).ready(function() {
 		}
 	});
 
-// Owl Carousel
-	
-      $("#owl-demo").owlCarousel({
-		  autoPlay : true,
-        pagination: false,
-		navigation : false
-		
-      });
-
 	// Fancybox
 	$('.work-box').fancybox();
 
