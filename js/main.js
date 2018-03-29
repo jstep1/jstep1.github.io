@@ -49,8 +49,12 @@ $(document).ready(function() {
 	});
 
 
-	$("#emailsubmit").click(function(e) {
+	$("#emailsubmit").on("click", function(e) {
 		e.preventDefault();
+
+		if($("#formname").val() !== "" && $("#formemail").val() !== "" && $("#formcomments").val() !== "") {
+
+		$("#emailsubmit").attr("value", "Please wait...");
 		(function(){
 
      	emailjs.init("user_A8Gpf0V6Ul0Qe6glnZckw");
@@ -61,13 +65,19 @@ $(document).ready(function() {
 				name: $("#formname").val(), 
 				email: $("#formemail").val(),
 				phone: $("#formphone").val(),
-				comments: $("#formcomments".val()
+				comments: $("#formcomments").val()
 			}).then(function(response) {
-   			console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+					alert("Your request has been sent. Thank you!");
+					$("#emailsubmit").attr("value", "Sent!");
+   					console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 			}, function(err) {
-   			console.log("FAILED. error=", err);
+					$("#emailsubmit").attr("value", "Submit");
+   					console.log("FAILED. error=", err);
 			});
+		}
+		else {
+			alert("Please fill out the required fields and try again.")
+		}
 	})
 	
-
 });
