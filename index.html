@@ -24,7 +24,7 @@
 <!-- header section --><div class="wrapper">
 <section class="banner" role="banner">
   <header id="header">
-    <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/mylogo.png" style="margin-left: 80%; margin-top:30%" alt=""></a> 
+    <div class="header-content clearfix"> <a class="logo" href="#"><img src="images/mylogo.png" style="margin-left: 80%; margin-top:25%" alt=""></a> 
       <!-- navigation section  -->
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
@@ -34,7 +34,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+      <a href="#" class="nav-toggle" style="margin-top:-1%">Menu<span></span></a> </div>
     <!-- navigation section  --> 
   </header>
   <!-- banner text section-->
@@ -103,7 +103,7 @@
   
 <div class="card-deck">
     <div class="card col-md-4">
-        <img class="card-img-top" src="images/app-screen/jamhomepage.png" alt="Card image cap">
+        <img class="card-img-top img-responsive" src="images/app-screen/jamhomepage.png" alt="Card image cap">
         <div class="card-body">
         <h5 class="card-title">Jamcestry</h5>
         <p class="card-text">Find information about your favorite artists and learn about their place in music history.</p>
@@ -113,7 +113,7 @@
       </div>
 
       <div class="card col-md-4">
-        <img class="card-img-top" src="images/app-screen/stakerr.png" alt="Card image cap">
+        <img class="card-img-top img-responsive" src="images/app-screen/stakerr.png" alt="Card image cap">
         <div class="card-body">
         <h5 class="card-title">Stakerr</h5>
         <p class="card-text">Create goals and place friendly wagers on the likelihood of their completion.</p>
@@ -123,7 +123,7 @@
       </div>
 
       <div class="card col-md-4">
-      <img class="card-img-top" src="images/app-screen/allthenews.png" alt="Card image cap">
+      <img class="card-img-top img-responsive" src="images/app-screen/allthenews.png" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">All The News</h5>
         <p class="card-text">View the newest articles from Clickhole, save them for later and add personal notes.</p>
@@ -148,50 +148,46 @@
     
     <!--contact form start-->
     <div class="row">
-    <div class="col-md-8 col-md-offset-3 conForm">
+
+    <div class="col-md-3">
+    </div>
+
+    <div class="col-md-6 conForm">
       <div id="message"></div>
       <form name="contactform">
-        <table width="450px">
+        <table width="100%">
         <tr>
          <td valign="top">
-          <label for="name">Name *</label>
-         </td>
-         <td valign="top">
-          <input type="text" name="name" id="formname" maxlength="50" size="30" required>
+          <input type="text" name="name" id="formname" placeholder="Your Name *" maxlength="50" size="30" required>
          </td>
         </tr>
         <tr>
          <td valign="top">
-          <label for="email">Email Address *</label>
-         </td>
-         <td valign="top">
-          <input type="text" name="email" id="formemail" maxlength="80" size="30" required>
+          <input type="text" name="email" id="formemail" placeholder="Your Email *" maxlength="80" size="30" required>
          </td>
         </tr>
         <tr>
          <td valign="top">
-          <label for="telephone">Phone Number</label>
-         </td>
-         <td valign="top">
-          <input type="text" name="telephone" id="formphone" maxlength="30" size="30">
+          <input type="text" name="telephone" id="formphone" placeholder="Your Phone Number" maxlength="30" size="30">
          </td>
         </tr>
         <tr>
          <td valign="top">
-          <label for="comments">Comments *</label>
-         </td>
-         <td valign="top">
-          <textarea name="comments" id="formcomments" maxlength="1000" cols="25" rows="6" required></textarea>
+          <textarea name="comments" id="formcomments" placeholder="Enter your comments... *" maxlength="1000" cols="25" rows="6" required></textarea>
          </td>
         </tr>
         <tr>
-         <td colspan="2" style="text-align:center">
-          <input type="submit" value="Submit" id="emailsubmit" style="width: 55%; margin-left: 26%">
+         <td colspan="2" valign="top">
+          <input type="submit" value="Submit" id="emailsubmit">
          </td>
         </tr>
         </table>
         </form>
     </div>
+
+  <div class="col-md-3">
+  </div>
+
   </div>
   </div>
 </section>

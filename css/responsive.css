@@ -137,6 +137,24 @@ text-align:center;
  .banner-btn a {
  margin-bottom: 15px;
 }
+.conForm input {
+	width:100%;
+	padding:15px 0px;
+}
+.conForm textarea {
+	padding:15px 30px;
+	margin-bottom:18px;
+	outline:none;
+	height:140px;
+	width:100%;
+	font-style:normal;
+	resize:none;
+	font-size:15px;
+	border:#dedede 1px solid;
+}
+.mresp {
+	display: none;
+}
 }
 
 @media screen and (max-width: 320px) {
