@@ -47,4 +47,27 @@ $(document).ready(function() {
 		$('.nav-toggle').toggleClass('close-nav');
 		nav.toggleClass('open');
 	});
+
+
+	$("#emailsubmit").click(function(e) {
+		e.preventDefault();
+		(function(){
+
+     	emailjs.init("user_A8Gpf0V6Ul0Qe6glnZckw");
+   		})();
+
+		emailjs.send("gmail","portfolio_page_contact_submission",
+			{
+				name: $("#formname").val(), 
+				email: $("#formemail").val(),
+				phone: $("#formphone").val(),
+				comments: $("#formcomments".val()
+			}).then(function(response) {
+   			console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+			}, function(err) {
+   			console.log("FAILED. error=", err);
+			});
+	})
+	
+
 });

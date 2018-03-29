@@ -150,14 +150,14 @@
     <div class="row">
     <div class="col-md-8 col-md-offset-3 conForm">
       <div id="message"></div>
-      <form name="contactform" method="post" action="send_form_email.php">
+      <form name="contactform">
         <table width="450px">
         <tr>
          <td valign="top">
           <label for="name">Name *</label>
          </td>
          <td valign="top">
-          <input type="text" name="name" maxlength="50" size="30">
+          <input type="text" name="name" id="formname" maxlength="50" size="30">
          </td>
         </tr>
         <tr>
@@ -165,7 +165,7 @@
           <label for="email">Email Address *</label>
          </td>
          <td valign="top">
-          <input type="text" name="email" maxlength="80" size="30">
+          <input type="text" name="email" id="formemail" maxlength="80" size="30">
          </td>
         </tr>
         <tr>
@@ -173,7 +173,7 @@
           <label for="telephone">Phone Number</label>
          </td>
          <td valign="top">
-          <input type="text" name="telephone" maxlength="30" size="30">
+          <input type="text" name="telephone" id="formphone" maxlength="30" size="30">
          </td>
         </tr>
         <tr>
@@ -181,12 +181,12 @@
           <label for="comments">Comments *</label>
          </td>
          <td valign="top">
-          <textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+          <textarea name="comments" id="formcomments" maxlength="1000" cols="25" rows="6"></textarea>
          </td>
         </tr>
         <tr>
          <td colspan="2" style="text-align:center">
-          <input type="submit" value="Submit" style="width: 30%; margin-left: 30%">
+          <input type="submit" value="Submit" id="emailsubmit" style="width: 30%; margin-left: 30%">
          </td>
         </tr>
         </table>
@@ -226,5 +226,6 @@
 <script src="js/modernizr.js"></script> 
 <script src="js/jquery.contact.js"></script> 
 <script src="js/main.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </body>
 </html>
