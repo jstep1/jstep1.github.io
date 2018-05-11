@@ -136,7 +136,7 @@ div.brow {
 /* Contact Form */
 
 .contact {
-  background: url('../images/office.jpg');
+  background: url('../images/office.jpg')
 }
 
 .sbmt {
@@ -151,4 +151,13 @@ div.brow {
 .fa {
   height: 50%;
   width: 50%;
+}
+
+@media (max-width: 750px) { 
+  .contact {
+    background: url()
+  }
+  .conForm p {
+    color: black;
+  }
 }

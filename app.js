@@ -30,8 +30,6 @@ function typeWriter() {
 
 )
 
-
-
 // Contact Form functions
 
 $("#emailsubmit").on("click", function(e) {
@@ -39,7 +37,7 @@ $("#emailsubmit").on("click", function(e) {
 
     if($("#formname").val() !== "" && $("#formemail").val() !== "" && $("#formcomments").val() !== "") {
 
-    $("#emailsubmit").attr("value", "Please wait...");
+    $("#emailsubmit").text("Please wait...");
     (function(){
 
      emailjs.init("user_A8Gpf0V6Ul0Qe6glnZckw");
@@ -53,7 +51,7 @@ $("#emailsubmit").on("click", function(e) {
             comments: $("#formcomments").val()
         }).then(function(response) {
                 alert("Your request has been sent. Thank you!");
-                $("#emailsubmit").attr("value", "Sent!");
+                $("#emailsubmit").text("Success!");
                    console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
         }, function(err) {
                 $("#emailsubmit").attr("value", "Submit");
